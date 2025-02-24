@@ -1,0 +1,245 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    width: 80%px;
+    height: 50px;
+    margin: 0 auto;
+    margin-right: 30px;
+    font-size: 20px;
+}
+.header ul li a {
+    color: black;
+}
+.header ul li a img{
+    display: none;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.main .main-1{
+    width: 80%;
+    height: 369px;
+    
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.main .main-1 .content h1{
+    margin-bottom: 30px;
+}
+.main .main-1 img{
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: -5px 10px rgb(162, 158, 158);
+}
+.main .content button{
+    width: 208px;
+    height: 47px;
+    background-color: #FF6464;
+    color: white;
+    border: none;
+    outline: none;
+    margin-top: 30px;
+}
+.main .main-2{
+    width:80%;
+    height: 369px;
+    display: flex;
+    flex-direction: column; 
+    background-color: #EDF7FA;
+    position: relative;
+}
+.main .main-2 .main-2-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main .main-2 .main-2-top p{
+    width: 129px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    left: 80px;
+}
+.main .main-2 .main-2-top a{
+    width: 129px;
+    height: 60px;
+    line-height: 60px;
+    position: absolute;
+    right: 80px;
+    text-align: end;
+    color: #00A8CC;
+}
+.main .main-2 .main-2-top a{
+    text-decoration: none;
+}
+.main .main-2 .main-2-botton{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.main .main-2 .main-2-botton .content{
+    width: 418px;
+    height: 295px;
+    background-color: white;
+    border-radius: 5px;
+    padding: 20px;
+    margin-top: 60px;
+}
+
+.main .main-2 .main-2-botton .content span{
+    display: flex;
+    flex-direction: row;
+}
+
+.main .main-3{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 800px;
+    padding-left: 80px;
+}
+.main .main-3 .title{
+    width: 152px;
+    height: 60px;
+    line-height: 60px;
+    font-size: 22px;
+}
+.main .main-3 div img{
+    width: 246px;
+    height: 180px;
+}
+
+.main .main-3 div{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.main .main-3 div:nth-of-type(2){
+    border-top: 1px solid #E0E0E0;
+    padding-top: 20px;
+}
+.main .main-3 div:nth-of-type(3){
+    border-top: 1px solid #E0E0E0;
+    padding-top: 20px;
+    border-bottom: 1px solid #E0E0E0;
+    padding-bottom: 20px;
+}
+
+.main .main-3 div .content{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+}
+.main .main-3 div .content span{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.main .main-3 div .content span p:nth-of-type(1){
+    width: 62px;
+    height: 25px;
+    text-align: center;
+    background-color: #142850;
+    border-radius: 20px;
+    color: white;
+}
+.main    .main-3 div .content span p:nth-of-type(2){
+    opacity: 0.5;
+}
+
+.footer{
+    width: 80%;
+    height: 182px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    gap: 10px;
+}
+
+.footer .social img{
+    padding: 21px;
+}
+.footer .main{
+    color: #21243D;
+}
+
+@media screen and (max-width:768px) {
+    .header{
+        width: 100%px;
+        margin-right: 30px;
+        font-size: 20px;
+    }
+    .header ul li a {
+        color: black;
+        display: none;
+    }
+    .header ul li a img{
+        display: block;
+    }
+    .main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: relative;
+    }
+    .main .main-1{
+        width: 100%;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .main .main-2{
+        position: absolute;
+        top: 700px;
+        width: 100%;
+        height: 75%;
+    }
+    .main .main-2 .main-2-botton{
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .main-3 {
+        position: relative;
+    }
+    .main-3 div:nth-of-type(2),
+    .main-3 div:nth-of-type(3){
+        display: none;
+    }
+    .main-3 div:nth-of-type(1){
+        position: absolute;
+        top: 1500px;
+    }
+    
+    .footer{
+        width: 100%;
+        height: 182px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+        gap: 10px;
+        position: relative;
+    }
+    .footer{
+        display: flex;
+        flex-direction: row;
+        position: relative;
+    }
+    .footer .social{
+        padding: 1700px;
+    }
+}
